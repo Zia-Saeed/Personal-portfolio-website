@@ -1,0 +1,13 @@
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 40px; /* Adjust this value to control the spacing between icons */
+  margin:50px;
+}
+.links{
+    color:white;
+    transition: transform 0.3s ease;
+}
+.links:hover{
+    transform: translateY(-5px)
+}

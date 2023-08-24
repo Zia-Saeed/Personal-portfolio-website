@@ -1,0 +1,63 @@
+{% extends "bootstrap/base.html" %}
+{% include "header.html" %}
+{% block content %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='about.css') }}">
+  <div id="carouselExampleCaptions" class="carousel slide">
+  <div class="carousel-inner mt-2">
+    <div class="carousel-item active">
+      <img src="https://i.pinimg.com/originals/cd/a0/e2/cda0e2478d21477bc222f2c6cb751c8e.png" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+    <section class="about-section">
+      <h2>Hi, I'm Ziauddin Saeed</h2>
+      <div class="paras">
+        <p>
+          I am a Python developer currently pursuing a BS-IT (Bachelor of Science in Information Technology) degree.
+        </p>
+        <p>
+          My passion for programming and problem-solving led me to the world of software development.
+        </p>
+        <p>
+          Throughout my academic journey, I have been exposed to various programming languages and technologies, but Python has captured my heart with its simplicity, versatility, and vast community support.
+        </p>
+        <p>
+          When I am not coding, you can find me exploring new technologies, reading tech blogs.
+        </p>
+      </div>
+      </section>
+            <section class="skills-section">
+    <div class="container">
+      <h1>My Skills</h1>
+      <ul class="skills-list">
+        <li>Python Programming | Tkinter | Turtle </li>
+        <li>Web Development with Flask</li>
+        <li>HTML | CSS | Bootstrap</li>
+        <li>Data Analysis with Pandas and Data visualization with matplotlib | seaborn and plotly </li>
+        <li>Web scraping and Python scripting</li>
+        <li>Basic Linux and Networking</li>
+        <li>API Development with Flask and API Integration</li>
+        <li>Database Management (SQL)</li>
+        <li>Version control with Git</li>
+
+      </ul>
+    </div>
+    </section>
+  <footer>
+    <p>Contact me at: zia.aseh@gmail.com</p>
+  </footer>
+        <hr>
+        {% include "social-media-svgs.html" %}
+     </div>
+    </div>
+    </div>
+  </div>
+  <div style="margin-top:10px;">
+  <span>
+    <a href="{{url_for('download_pdf')}}"><button type="button" class="btn btn-outline-success">Download CV</button></a>
+  </span>
+  <span>
+    <a href="{{url_for('view_pdf')}}"><button type="button" class="btn btn-outline-info">View CV</button></a>
+  </span>
+  </div>
+</body>
+</html>
+{% endblock %}

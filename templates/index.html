@@ -1,0 +1,22 @@
+{% extends "bootstrap/base.html" %}
+{% include 'header.html' %}
+{% block content %}
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='home.css') }}">
+  <div style="display-flex; justify-content:center; margin-top:100px"><img style="border-radius: 100px;" width="200" height="200" src="https://www.facebook.com/photo/?fbid=1335993733824931&set=pob.100022429517606"></div>
+  <main class="px-3" style="null;/*startDM*/undefined/*endDM*/">
+    <hr>
+    <h1 style="null;/*startDM*/undefined/*endDM*/">Zia Saeed.</h1>
+    <p class="lead" style="null;/*startDM*/undefined/*endDM*/">
+<!--      <hr>-->
+As a Python developer, I am a passionate about learning new technologies to create innovative and efficient solutions</p>
+
+  </main>
+<hr>
+{% include "social-media-svgs.html" %}
+{% include "footer.html" %}
+</body>
+</html>
+{% endblock %}
+
+
+
